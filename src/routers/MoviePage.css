@@ -1,0 +1,43 @@
+:root {
+  --color-black: #000000;
+  --color-red: #dc0611;
+  --color-white: #ffffff;
+  --color-grey: #303030;
+}
+
+.moviePage {
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.moviePage img {
+  margin-right: 50px;
+}
+
+.moviePage__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.moviePage__title {
+  color: var(--color-white);
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.moviePage__year {
+  font-size: 18px;
+}
+
+.moviePage__genres {
+  margin-bottom: 30px;
+}
+
+.moviePage__summary {
+  font-size: 24px;
+}

@@ -4,12 +4,19 @@
   --color-white: #ffffff;
   --color-grey: #303030;
 }
+.movies a {
+  text-decoration: none;
+  color: var(--color-white);
+}
 
 .movie {
-  display: flex;
   margin: 50px 100px;
   background-color: var(--color-grey);
   border-radius: 0px 0px 20px 0px;
+}
+
+.movie a {
+  display: flex;
 }
 
 .movie__poster {

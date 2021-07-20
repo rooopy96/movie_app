@@ -21,7 +21,6 @@ class Home extends React.Component {
 
 	componentDidMount() {
 		this.getMovie();
-		console.log()
 	}
 
 	render() {
@@ -43,6 +42,7 @@ class Home extends React.Component {
 								rating={movie.rating}
 								summary={movie.summary}
 								poster={movie.medium_cover_image}
+								largePoster={movie.large_cover_image}
 								genres={movie.genres}
 							/>
 						})}

@@ -1,6 +1,7 @@
 import React from "react";
 import axios from "axios";
 import Movie from "../components/Movie.js";
+import "./Home.css";
 
 class Home extends React.Component {
 	state = {
@@ -15,10 +16,12 @@ class Home extends React.Component {
 			}
 		} = await axios.get("https://yts-proxy.nomadcoders1.now.sh/list_movies.json?sort_by=rating");
 		this.setState({ movies, isLoading: false });
+		window.scrollTo(0, 0);
 	}
 
 	componentDidMount() {
 		this.getMovie();
+		console.log()
 	}
 
 	render() {

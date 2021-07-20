@@ -1,0 +1,36 @@
+:root {
+  --color-black: #000000;
+  --color-red: #dc0611;
+  --color-white: #ffffff;
+}
+
+.nav {
+  position: fixed;
+  height: 70px;
+  width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-black);
+  z-index: 10;
+}
+
+.nav__title {
+  color: var(--color-red);
+  font-weight: 900;
+  font-size: 50px;
+  padding: 5px 10px;
+  transform: skewY(-4deg);
+}
+
+.nav a {
+  color: var(--color-white);
+  background-color: var(--color-red);
+  text-decoration: none;
+  font-size: 24px;
+  padding: 10px 15px;
+  margin: 5px 10px;
+  border-radius: 5px;
+  text-align: center;
+}

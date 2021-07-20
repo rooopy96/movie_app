@@ -1,0 +1,39 @@
+:root {
+  --color-black: #000000;
+  --color-red: #dc0611;
+  --color-white: #ffffff;
+  --color-grey: #303030;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+.container {
+  margin-top: 70px;
+  width: 100%;
+  height: 100vh;
+}
+
+.loader {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-weight: bolder;
+  font-size: 50px;
+  transform: translate(-10%, -10%);
+}
+
+.movies {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: repeat(auto-fill);
+}
